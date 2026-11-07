@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name = "tb_brand")
+@Table(name = "tb_car")
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
@@ -25,7 +25,9 @@ public class Car {
 
     private String name;
     private Brand brand;
+    private String color;
     private Drivetrain drivetrain;
     private Integer weight;
-    private Integer potency;
+    private Integer power;
+    private Integer rpm;
 }
