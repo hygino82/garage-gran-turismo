@@ -12,12 +12,15 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 import br.dev.hygino.garage.dtos.RequestBrandDto;
 import br.dev.hygino.garage.dtos.ResponseBrandDto;
 import br.dev.hygino.garage.services.BrandService;
+import jakarta.validation.Valid;
 
 @RequestMapping("api/v1/brand")
+@RestController
 public class BrandController {
     private final BrandService service;
 
@@ -26,13 +29,13 @@ public class BrandController {
     }
 
     @PostMapping
-    public ResponseEntity<ResponseBrandDto> createBrand(@RequestBody RequestBrandDto dto) {
+    public ResponseEntity<ResponseBrandDto> createBrand(@RequestBody @Valid RequestBrandDto dto) {
         final var response = service.createBrand(dto);
         return ResponseEntity.status(HttpStatus.CREATED).body(response);
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<ResponseBrandDto> updateBrand(@PathVariable long id, @RequestBody RequestBrandDto dto) {
+    public ResponseEntity<ResponseBrandDto> updateBrand(@PathVariable long id, @RequestBody @Valid RequestBrandDto dto) {
         final var response = service.updateBrand(id, dto);
         return ResponseEntity.ok(response);
     }

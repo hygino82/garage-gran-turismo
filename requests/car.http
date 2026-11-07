@@ -1,0 +1,36 @@
+### Insere um novo carro
+POST http://localhost:8080/api/v1/car
+Content-Type: application/json
+
+{
+    "name":"500",
+    "brandId":1,
+    "color":"YELLOW",
+    "drivetrain":"FF",
+    "weight":800,
+    "power":100,
+    "rpm":5700
+}
+
+### atualiza um novo carro
+PUT  http://localhost:8080/api/v1/car/3
+Content-Type: application/json
+
+{
+    "name":"GT",
+    "brandId":2,
+    "color":"RED",
+    "drivetrain":"FR",
+    "weight":1200,
+    "power":150,
+    "rpm":6500
+}
+
+### busca um carro pelo id
+GET http://localhost:8080/api/v1/car/6
+
+### busca todos os carros
+GET http://localhost:8080/api/v1/car
+
+#### deleta um carro pelo id
+DELETE http://localhost:8080/api/v1/car/6

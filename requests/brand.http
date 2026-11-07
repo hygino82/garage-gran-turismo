@@ -1,0 +1,28 @@
+### Insere uma nova marca
+POST http://localhost:8080/api/v1/brand
+Content-Type: application/json
+
+{
+    "name":"FIAT",
+    "country":"ITALY",
+    "continent":"EUROPE"
+}
+
+### atualiza uma nova marca
+PUT  http://localhost:8080/api/v1/brand/3
+Content-Type: application/json
+
+{
+    "name":"GT",
+    "country":"BRAZIL",
+    "continent":"AMERICA"
+}
+
+### busca uma marca pelo id
+GET http://localhost:8080/api/v1/brand/6
+
+### busca todas as marcas
+GET http://localhost:8080/api/v1/brand
+
+#### deleta uma marca pelo id
+DELETE http://localhost:8080/api/v1/brand/6

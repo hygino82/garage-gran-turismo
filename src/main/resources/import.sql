@@ -1,0 +1,11 @@
+INSERT INTO tb_brand (name, country, continent, created_at, updated_at) VALUES ('FIAT', 'ITALY', 'EUROPE', '2026-11-07T08:57:00', '2026-11-07T08:57:00');
+INSERT INTO tb_brand (name, country, continent, created_at, updated_at) VALUES ('FERRARI', 'ITALY', 'EUROPE', '2026-11-07T08:57:00', '2026-11-07T08:57:00');
+INSERT INTO tb_brand (name, country, continent, created_at, updated_at) VALUES ('LAMBORGHINI', 'ITALY', 'EUROPE', '2026-11-07T08:57:00', '2026-11-07T08:57:00');
+INSERT INTO tb_brand (name, country, continent, created_at, updated_at) VALUES ('ALFA ROMEO', 'ITALY', 'EUROPE', '2026-11-07T08:57:00', '2026-11-07T08:57:00');
+INSERT INTO tb_brand (name, country, continent, created_at, updated_at) VALUES ('MASERATI', 'ITALY', 'EUROPE', '2026-11-07T08:57:00', '2026-11-07T08:57:00');
+INSERT INTO tb_brand (name, country, continent, created_at, updated_at) VALUES ('PEUGEOT', 'FRANCE', 'EUROPE', '2026-11-07T08:57:00', '2026-11-07T08:57:00');
+INSERT INTO tb_brand (name, country, continent, created_at, updated_at) VALUES ('RENAULT', 'FRANCE', 'EUROPE', '2026-11-07T08:57:00', '2026-11-07T08:57:00');
+INSERT INTO tb_brand (name, country, continent, created_at, updated_at) VALUES ('TOYOTA', 'JAPAN', 'ASIA', '2026-11-07T08:57:00', '2026-11-07T08:57:00');
+INSERT INTO tb_brand (name, country, continent, created_at, updated_at) VALUES ('HONDA', 'JAPAN', 'ASIA', '2026-11-07T08:57:00', '2026-11-07T08:57:00');
+INSERT INTO tb_brand (name, country, continent, created_at, updated_at) VALUES ('FORD', 'USA', 'AMERICA', '2026-11-07T08:57:00', '2026-11-07T08:57:00');
+INSERT INTO tb_brand (name, country, continent, created_at, updated_at) VALUES ('CHEVROLET', 'USA', 'AMERICA', '2026-11-07T08:57:00', '2026-11-07T08:57:00');
