@@ -1,0 +1,28 @@
+<div class="container">
+  <h1>Cadastro de Marca</h1>
+  <form>
+    <div class="mb-3">
+      <label for="brandName" class="form-label">Nome da marca</label>
+      <input type="text" class="form-control" id="brandName" placeholder="Enter brand name" [(ngModel)]="brand.name">
+    </div>
+
+    <div class="mb-3">
+      <label for="country" class="form-label">País</label>
+      <input type="text" class="form-control" id="country" placeholder="Informe o país" [(ngModel)]="brand.country">
+    </div>
+
+    <div class="mb-3">
+      <label for="continent" class="form-label">Continente</label>
+      <select class="form-select" id="continent" [(ngModel)]="brand.continent">
+        <option value="" selected disabled>Selecione um continente</option>
+        <option value="AFRICA">África</option>
+        <option value="ASIA">Ásia</option>
+        <option value="EUROPE">Europa</option>
+        <option value="OCEANIA">Oceania</option>
+        <option value="AMERICA">América</option>
+      </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary" (click)="saveBrand()">Submit</button>
+  </form>
+</div>

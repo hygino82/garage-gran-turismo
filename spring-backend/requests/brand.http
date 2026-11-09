@@ -22,7 +22,7 @@ Content-Type: application/json
 GET http://localhost:8080/api/v1/brand/6
 
 ### busca todas as marcas
-GET http://localhost:8080/api/v1/brand
+GET http://localhost:8080/api/v1/brand?name=o
 
 #### deleta uma marca pelo id
 DELETE http://localhost:8080/api/v1/brand/6
